@@ -1,11 +1,11 @@
 node {
-stage(‘Preparation’) {
-git ‘https://github.com/Japke/heroku.git'
+stage('Preparation') {
+git 'https://github.com/Japke/heroku.git'
 }
-stage(‘build’){
-sh “./gradlew clean test”
+stage('build'){
+sh "./gradlew clean test"
 }
-stage(‘Deploy’){
-sh “git push https://git.heroku.com/desolate-oasis-68585.git”
+stage('Deploy'){
+sh "git push https://git.heroku.com/desolate-oasis-68585.git"
 }
 }
