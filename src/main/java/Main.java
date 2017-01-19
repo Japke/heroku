@@ -33,7 +33,7 @@ public class Main {
                 })
 
                 .get("test", ctx -> {
-                    ctx.render("test works!");
+                    ctx.render("test!");
                 })
 
             .get("db", ctx -> {
